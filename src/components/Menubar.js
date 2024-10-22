@@ -18,7 +18,7 @@ export default function Menubar() {
 
   return (
     <div>
-      <div className=" fixed bg-[#f0ecf4] top-0 left-0 h-screen w-[100px] flex flex-col items-center py-[100px]">
+      <div className=" fixed bg-[#f0ecf4] top-0 left-0 h-screen w-[100px] flex flex-col items-center pt-[100px]">
         <div className="flex flex-col items-center ">
           <FaImage
             className={`w-[100px] h-[100px] text-gray-500 ${
