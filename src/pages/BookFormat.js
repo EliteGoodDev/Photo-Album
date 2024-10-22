@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
+
 import UpdateBookModal from "../components/UpdateBookModal";
 
 export default function BookFormat() {
@@ -8,7 +10,8 @@ export default function BookFormat() {
     "Portrait A4",
     "Square 30x30cm",
   ];
-  const [selectedFormat, setSelectedFormat] = useState(0);
+  const paperType = useSelector((state) => state.book.paper);
+  const [selectedFormat, setSelectedFormat] = useState(paperType);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
